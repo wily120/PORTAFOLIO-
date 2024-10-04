@@ -1,0 +1,699 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f6fafc;
+}
+
+/* SECCIÓN I N I C I O */
+.inicio {
+    background: linear-gradient(to right, #000000, #c8102e); /* Negro y rojo */
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+    height: 90vh;
+    padding: 0 20px;
+    position: relative;
+}
+
+.inicio .contenido {
+    max-width: 1100px;
+    margin: auto;
+    color: #fff; /* Texto blanco para contraste */
+}
+
+.inicio header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.inicio .logo {
+    display: flex;
+    align-items: center;
+    color: #c8102e; /* Color rojo para el logo */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.inicio .logo i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+#inicio header nav a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#inicio header nav a:hover {
+    background-color: rgba(200, 16, 46, 0.2); /* Rojo suave en hover */
+}
+
+.inicio .redes a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco */
+    display: inline-block;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.inicio .redes a:hover {
+    color: #c8102e; /* Rojo al pasar el cursor */
+}
+
+.inicio .fila {
+    display: flex;
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+
+.inicio .fila .col {
+    width: 50%;
+}
+
+.inicio .fila .col h2 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.inicio .fila .col p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.inicio .fila .col .contenedor-img {
+    max-width: 450px;
+    margin: auto;
+}
+
+.inicio .fila .col .contenedor-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inicio .fila .col button {
+    padding: 10px 50px;
+    border: 2px solid #c8102e; /* Borde rojo */
+    color: #fff;
+    background: linear-gradient(to right, #c8102e, #ff3e3e); /* De rojo a rojo claro */
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.5s, background-color 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inicio .fila .col button:hover {
+    transform: scale(1.1);
+    background: #ff3e3e; /* Color al pasar el cursor */
+}
+
+#icono-nav {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    display: none;
+}
+
+#icono-nav:hover {
+    background-color: rgba(255, 62, 62, 0.8); /* Fondo más oscuro al pasar el cursor */
+}
+
+.sombra {
+    filter: drop-shadow(0 20px 15px rgba(255, 62, 62, 0.6)); /* Sombra más sutil */
+}
+
+/* SECCIÓN S E R V I C I O S */
+.servicios {
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+    top: -85px;
+    z-index: 10;
+    background-color: #f7f7f7; /* Color de fondo suave */
+    border-radius: 20px; /* Bordes redondeados para toda la sección */
+}
+
+.servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.servicios .fila .col {
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s; /* Efecto de transición para el hover */
+}
+
+.servicios .fila .col:hover {
+    transform: translateY(-5px); /* Levantar ligeramente al pasar el cursor */
+}
+
+.servicios .fila .col .card {
+    border: 1px solid #ddd; /* Borde más claro */
+    height: 350px;
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    padding: 30px;
+    top: 20px;
+    bottom: 20px;
+    border-radius: 20px;
+    position: relative;
+    transition: box-shadow 0.3s; /* Efecto de sombra al hover */
+}
+
+.servicios .fila .col .card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+.servicios .icono {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Reducción de espacio */
+    transition: transform 0.3s; /* Transición suave para el icono */
+}
+
+.servicios .icono:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el cursor */
+}
+
+.servicios .icono .circulo {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Borde blanco para el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.color1 {
+    background: linear-gradient(#c8102e, #ff3e3e); /* Rojo */
+}
+
+.color2 {
+    background: linear-gradient(#000000, #333333); /* Negro */
+}
+
+.color3 {
+    background: linear-gradient(#c8102e, #ff3e3e); /* Rojo */
+}
+
+.servicios h3 {
+    margin-bottom: 15px; /* Ajustar margen */
+    font-size: 20px; /* Tamaño de fuente aumentado */
+    color: #333; /* Color de texto más oscuro */
+}
+
+.servicios .card p {
+    color: #666; /* Color de texto más oscuro */
+    line-height: 1.6; /* Mayor espacio entre líneas */
+    font-size: 14px; /* Tamaño de fuente aumentado */
+}
+
+.servicios .card a {
+    text-decoration: none;
+    color: #c8102e; /* Color rojo para enlaces */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold; /* Hacer el texto más llamativo */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.servicios .card a:hover {
+    color: #ff3e3e; /* Color más claro al pasar el cursor */
+}
+
+
+/* SECCIÓN HABILIDADES */
+.habilidades {
+    background: linear-gradient(to right, #000000, #c8102e); /* Fondo en degradado negro y rojo */
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    top: -100px;
+    text-align: center; /* Centrado del texto */
+}
+
+.habilidades h2 {
+    font-size: 36px; /* Aumento del tamaño del encabezado */
+    margin-bottom: 30px; /* Espacio debajo del encabezado */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.habilidades .contenedor-habi {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.habilidades .fila {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permitir que se ajusten en pantallas más pequeñas */
+}
+
+.score {
+    padding: 20px; /* Aumento del padding */
+    margin: 20px 0; /* Espaciado entre las habilidades */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil para las habilidades */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa para profundidad */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.score:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+.score .box {
+    width: 160px; /* Ancho fijo para mantener uniformidad */
+}
+
+.score .box h2 {
+    display: block;
+    font-size: 24px; /* Tamaño del título de la habilidad */
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #ff5b00; /* Color atractivo para el título */
+}
+
+.score .box .chart {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px; /* Centrado vertical */
+    font-size: 40px;
+    text-align: center;
+    color: #fff; /* Color del texto en el gráfico */
+    font-weight: bold; /* Negrita para mayor impacto */
+    border-radius: 50%; /* Gráficos circulares */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo para el gráfico */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+}
+
+/* Esta clase se genera dinámicamente por la librería para gráficos */
+.score .box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%; /* Bordes redondeados para el canvas */
+}
+
+
+/* SECCIÓN T R A B A J O S */
+.trabajos {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.trabajos h2 {
+    text-align: center;
+    font-size: 2rem; /* Aumentar tamaño del encabezado */
+    color: #333; /* Color de texto más oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.trabajos nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.trabajos nav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #007be5;
+    font-weight: bold;
+    padding: 8px 15px; /* Mayor padding para botones */
+    border: 3px solid transparent;
+    border-radius: 5px; /* Bordes redondeados en los enlaces */
+    transition: all 0.3s; /* Transición suave */
+}
+
+.trabajos nav a:hover {
+    border: 3px solid #ff5b00;
+    background-color: rgba(255, 91, 0, 0.1); /* Fondo suave al pasar el cursor */
+}
+
+/* Esta clase se agrega dinámicamente cuando hay seleccionada una opción */
+.borde {
+    border: 3px solid #ff5b00 !important;
+}
+
+.trabajos .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 30px;
+}
+
+.trabajos .galeria .item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Borde más suave */
+    border-radius: 10px;
+    transition: transform 0.3s; /* Transición para hover */
+}
+
+.trabajos .galeria .item:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el cursor */
+}
+
+.trabajos .galeria .item img {
+    width: 100%;
+    height: auto; /* Mantener proporciones de imagen */
+    display: block;
+    border-bottom: 5px solid #ff5b00; /* Línea de separación debajo de la imagen */
+}
+
+.trabajos .galeria .item .info {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+    border-radius: 10px; /* Bordes redondeados en la info */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para la info */
+}
+
+.trabajos .galeria .item .info h3 {
+    color: #000;
+    margin-bottom: 10px; /* Espacio reducido */
+    font-size: 1.5rem; /* Tamaño aumentado */
+}
+
+.trabajos .galeria .item .info span {
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding: 0 5px;
+    border-radius: 3px; /* Bordes redondeados para etiquetas */
+}
+
+.trabajos .galeria .item .info a {
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.trabajos .galeria .item .info a:hover {
+    color: #005bb5; /* Cambio de color al pasar el cursor */
+}
+
+.trabajos .galeria .item:hover .info {
+    opacity: 1;
+    top: 0;
+}
+
+/* SECCIÓN C O N T A C T O */
+.contacto {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), 
+    url(img/foto-contacto.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-top: 100px;
+    padding: 80px 20px;
+}
+
+.contacto .contenedor-contacto {
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 10px; /* Añadido para bordes redondeados */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+}
+
+.contacto h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 36px; /* Aumentar el tamaño del texto */
+}
+
+.contacto .fila {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten */
+}
+
+.contacto .col {
+    flex: 1; /* Permite que las columnas ocupen el mismo espacio */
+    min-width: 300px; /* Ancho mínimo para las columnas */
+    padding: 20px; /* Añadido espaciado entre columnas */
+}
+
+.contacto .info {
+    margin-bottom: 30px;
+    border-left: 3px solid #8d8d8d;
+    padding-left: 15px; /* Mayor espaciado para mejor visualización */
+}
+
+.contacto .info h3 {
+    margin-bottom: 5px; /* Espaciado adicional entre título y texto */
+}
+
+.contacto .info p {
+    color: #8d8d8d;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    border: none;
+    background-color: rgba(189, 189, 189, 0.2); /* Fondo semitransparente rojo */
+    padding: 15px;
+    border: 1px solid #8d8d8d;
+    margin-bottom: 20px;
+    outline: none;
+    color: #fff; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border 0.3s; /* Transición suave para el borde */
+}
+
+.contacto input:focus, .contacto textarea:focus {
+    border: 1px solid #ff5b00; /* Cambio de color en foco */
+}
+
+.contacto .btn {
+    background: linear-gradient(to right, #ff6666, #cc0000);
+    padding: 10px 40px;
+    border: none;
+    color: #fff;
+    font-size: 16px; /* Aumentar el tamaño del texto */
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Transición para el hover */
+}
+
+.contacto .btn:hover {
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+footer {
+    background-color: #1a1a1a; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px){
+    .inicio{
+        clip-path: none;
+    }
+}
+@media screen and (max-width:800px){
+
+
+    .redes{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #nav.responsive{
+        background-color: rgba(0,0,0,.9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    #icono-nav{
+        display: block;
+    }
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .fila .col h2{
+        margin-top: 20px;
+    }
+    .inicio .fila .col .contenedor-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .servicios{
+        position: static;
+    }
+    .servicios .fila{
+        display: block;
+        margin-bottom: 0;
+    }
+    .servicios .fila .col{
+        width: 70%;
+        margin: auto;
+    }
+    .servicios .fila .col .card{
+        margin-bottom: 20px;
+    }
+  
+
+    .trabajos nav a{
+        margin: 0 5px;
+    }
+
+    .contacto .contenedor-contacto .fila {
+        display: block; /* Cambiar a bloque para mostrar los elementos en una sola columna */
+    }
+
+    .contacto .contenedor-contacto .fila .col {
+        width: 100%; /* Ocupa el 100% del ancho */
+        padding: 10px 0; /* Espaciado interno */
+    }
+
+    .contacto .contenedor-contacto .info {
+        width: 100%; /* La información ocupa el 100% */
+        margin: 10px auto; /* Margen automático */
+        padding: 10px; /* Espaciado interno */
+        border-left: none; /* Remover borde izquierdo */
+        border-bottom: 3px solid #8d8d8d; /* Borde inferior para separar elementos */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .contacto input,
+    .contacto textarea {
+        width: 100%; /* Asegura que ocupen el 100% */
+        margin: 10px auto; /* Separación entre campos */
+    }
+
+    .contacto .btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0; /* Espaciado más amplio */
+        margin-top: 20px;
+    }
+
+
+    
+    
+
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+    .habilidades {
+        padding: 40px 20px;
+        top: 0;
+    }
+
+    .habilidades h2 {
+        font-size: 28px;
+    }
+
+    .habilidades .contenedor-habi {
+        max-width: 100%;
+    }
+
+    .habilidades .fila {
+        display: block; /* Cambiar a flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        flex-wrap: wrap; /* Permitir que se ajusten en pantallas más pequeñas */
+    }
+
+    .score {
+        width: 90%;
+        margin: 15px auto; /* Centrar */
+    }
+
+    .score .box {
+        width: 100%; /* Asegurarse de que ocupe el 100% del contenedor */
+    }
+
+    .score .box h2 {
+        font-size: 20px;
+    }
+
+    .score .box .chart {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 24px;
+    }
+
+    .score .box canvas {
+        width: 10px;
+        height: 810px;
+        display: none;
+    }
+}

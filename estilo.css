@@ -16,7 +16,6 @@ body{
 /* SECCIÓN I N I C I O */
 .inicio {
     background: linear-gradient(to right, #000000, #c8102e); /* Negro y rojo */
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
     height: 90vh;
     padding: 0 20px;
     position: relative;
@@ -338,13 +337,14 @@ body{
     padding: 0 20px;
     background-color: #f9f9f9; /* Fondo suave */
     border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 .trabajos h2 {
     text-align: center;
-    font-size: 2rem; /* Aumentar tamaño del encabezado */
+    font-size: 2.5rem; /* Tamaño del encabezado ajustado */
     color: #333; /* Color de texto más oscuro */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-bottom: 30px; /* Espacio debajo del título */
 }
 
 .trabajos nav {
@@ -355,29 +355,30 @@ body{
 .trabajos nav a {
     text-decoration: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px; /* Ajuste de margen */
     color: #007be5;
-    font-weight: bold;
-    padding: 8px 15px; /* Mayor padding para botones */
+    font-weight: 600; /* Peso de fuente ajustado */
+    padding: 10px 20px; /* Mayor padding para botones */
     border: 3px solid transparent;
     border-radius: 5px; /* Bordes redondeados en los enlaces */
-    transition: all 0.3s; /* Transición suave */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones específicas */
 }
 
 .trabajos nav a:hover {
-    border: 3px solid #ff5b00;
+    border-color: #ff5b00;
     background-color: rgba(255, 91, 0, 0.1); /* Fondo suave al pasar el cursor */
 }
 
-/* Esta clase se agrega dinámicamente cuando hay seleccionada una opción */
+/* Clase dinámica para opción seleccionada */
 .borde {
-    border: 3px solid #ff5b00 !important;
+    border-color: #ff5b00 !important;
 }
 
 .trabajos .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-gap: 30px;
+    margin-top: 20px; /* Espacio superior */
 }
 
 .trabajos .galeria .item {
@@ -386,6 +387,7 @@ body{
     border: 1px solid #ddd; /* Borde más suave */
     border-radius: 10px;
     transition: transform 0.3s; /* Transición para hover */
+    background-color: #fff; /* Fondo blanco para los items */
 }
 
 .trabajos .galeria .item:hover {
@@ -401,15 +403,15 @@ body{
 
 .trabajos .galeria .item .info {
     position: absolute;
-    top: -100%;
+    top: 100%; /* Iniciar fuera de la vista */
     left: 0;
     bottom: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo suave y ligeramente transparente */
     width: 100%;
     padding: 20px;
     opacity: 0;
-    transition: .3s;
+    transition: opacity 0.3s, top 0.3s; /* Transiciones para opacidad y posición */
     border-radius: 10px; /* Bordes redondeados en la info */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para la info */
 }
@@ -442,10 +444,12 @@ body{
     color: #005bb5; /* Cambio de color al pasar el cursor */
 }
 
+
 .trabajos .galeria .item:hover .info {
     opacity: 1;
-    top: 0;
+    top: 0; /* Mover a la vista */
 }
+
 
 /* SECCIÓN C O N T A C T O */
 .contacto {

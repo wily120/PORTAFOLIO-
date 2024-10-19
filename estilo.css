@@ -396,10 +396,11 @@ body{
 
 .trabajos .galeria .item img {
     width: 100%;
-    height: auto; /* Mantener proporciones de imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
     display: block;
     border-bottom: 5px solid #ff5b00; /* Línea de separación debajo de la imagen */
 }
+
 
 .trabajos .galeria .item .info {
     position: absolute;
